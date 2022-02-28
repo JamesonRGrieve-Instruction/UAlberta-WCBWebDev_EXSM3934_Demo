@@ -1,0 +1,15 @@
+p {
+    color: aqua;
+    background-color: black;
+}
+ul {
+    border: 2px solid black;
+    border-radius: 10px;
+    list-style-type: square;
+}
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 42pt;
+    text-decoration: underline;
+    font-weight: normal;
+}
