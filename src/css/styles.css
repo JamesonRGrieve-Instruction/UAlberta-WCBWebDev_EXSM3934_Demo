@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 html {
-    background-color: firebrick;
+    background-image: url("../img/sample-image.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 .container
 {
@@ -14,4 +16,26 @@ html {
 }
 h1 {
     margin: 5px 0;
+}
+.image {
+    width: 400px;
+    height: 300px;
+    background-color: black;
+    background-image: url("../img/sample-image.jpg");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position-x: center;
+}
+.image>p {
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    width: 400px;
+    height: 300px;
+    background-image: url("../img/smile.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position-x: center;
 }
