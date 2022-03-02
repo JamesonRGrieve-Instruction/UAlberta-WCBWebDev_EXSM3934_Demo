@@ -1,0 +1,53 @@
+* {
+    /* Makes border and padding scale in from height/width, instead of adding to it.
+    Makes math easier. */
+    box-sizing: border-box;
+}
+div
+{
+    /* Don't use this, it's deprecated. Only for example layout purposes. */
+    float: left;
+
+    /* Forces the width/height of block-level elements. */
+    width: 100px;
+    height: 100px;
+}
+#test1
+{
+    background-color: blueviolet;
+
+    /* Sets the one-sided margin of an element. The space between it and other elements' margins. */
+    margin-left: 5px;
+    margin-right: 5px;
+
+    /* Sets the padding on all 4 sides of an element. The space between its border and its content. */
+    padding: 5px;
+}
+#test1>div
+{
+    width: 90px;
+    height: 90px;
+    /* Sets the border on all 4 sides of an element. Reduces available space for content (border-box)
+     or increases element size (content-box). */
+    border: 2px solid black;
+}
+#test2 
+{
+    background-color: chartreuse;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px solid black;
+    padding-left: 5px;
+}
+#test3
+{
+    background-color: firebrick;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#test3>div
+{
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+}

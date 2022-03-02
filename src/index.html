@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Demo</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Welcome to CSS</h1>
-    <h2>Here's some sample content.</h2>
-    <div id="test1">
-      <div></div>
-    </div>
-    <div id="test2">Here's some awesome content.</div>
-    <div id="test3">
-      <div></div>
-      <div></div>
+    <div class="container">
+      <header>
+        <h1>Welcome to CSS</h1>
+        <p>Welcome to a demo page about CSS! We're going to use this page to learn about responsive design.</p>
+      </header>
+      <main>
+        <article>
+          <h2>The Purpose of Responsive Design</h2>
+          <p>Responsive design allows HTML pages and their designs to scale or completely reorganize to better suit different screen sizes.
+            For example, on a mobile device, forms may be laid out in a single column, versus on a large desktop screen they may be in two or three columns.
+            We can also change font sizes to be more readable, change menu styles into a collapsable format, and many other things to make a website mobile-friendly.
+          </p>
+        </article>
+        <aside>
+          <p>Did you know that websites that Google thinks aren't mobile friendly are ranked lower in Google searches? They are!</p>
+        </aside>
+      </main>
+      <footer>
+        <h2>Thanks for Reading!</h2>
+        <p>Come again, I'm sure more content will be added in the future.</p>
+      </footer>
     </div>
 	<script src="js/scripts.js" defer></script>
   </body>
