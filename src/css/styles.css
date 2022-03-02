@@ -42,9 +42,24 @@ h1 {
     background-repeat:no-repeat;
     background-position-x: center;
 }
+/* On mouse over. */
 .thingy:hover {
     background-color: cyan;
 }
+/* On focus (entering text). */
 .thingy:focus {
     background-color: chartreuse;
+}
+
+/* A decision for CSS */
+@media (max-width: 500px) {
+    /* Anything less than a 500px screen width... */
+    html
+    {
+        background-image: unset;
+        background-color: chartreuse;
+    }
+    .image {
+        display: none;
+    }
 }
