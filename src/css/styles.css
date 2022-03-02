@@ -43,16 +43,23 @@ h1 {
     background-position-x: center;
 }
 /* On mouse over. */
-.thingy:hover {
+input:hover {
     background-color: cyan;
 }
 /* On focus (entering text). */
-.thingy:focus {
+input:focus {
     background-color: chartreuse;
 }
 
+span.red {
+    color: red;
+}
+span.blue {
+    color: blue;
+}
 /* A decision for CSS */
-@media (max-width: 500px) {
+/* Mobile */
+@media (max-width: 480px) {
     /* Anything less than a 500px screen width... */
     html
     {
@@ -63,3 +70,13 @@ h1 {
         display: none;
     }
 }
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px)
+{
+    html
+    {
+        background-image: unset;
+        background-color: cyan;
+    }
+}
+
