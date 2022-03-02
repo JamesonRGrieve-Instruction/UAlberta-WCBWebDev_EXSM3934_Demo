@@ -26,6 +26,9 @@ h1 {
     background-repeat:no-repeat;
     background-position-x: center;
 }
+.image:hover {
+    background-color: red;
+}
 .image>p {
     color: white;
     text-align: center;
@@ -38,4 +41,10 @@ h1 {
     background-size: contain;
     background-repeat:no-repeat;
     background-position-x: center;
+}
+.thingy:hover {
+    background-color: cyan;
+}
+.thingy:focus {
+    background-color: chartreuse;
 }
