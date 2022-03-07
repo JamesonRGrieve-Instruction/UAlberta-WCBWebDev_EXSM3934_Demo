@@ -40,3 +40,13 @@ input:not([type="text"]):hover
 {
     background-color: blue;
 }
+
+/* #6 */
+@media (max-width: 400px)
+{
+    input 
+    {
+        width: 100%;
+    }
+}
+
