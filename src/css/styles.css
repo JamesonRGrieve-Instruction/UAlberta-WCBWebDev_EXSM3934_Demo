@@ -14,3 +14,30 @@ html {
     /* Top, Right, Bottom, Left (Starting at Noon, 3h Increments Clockwise) */
     padding: 10px;
 }
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.employee {
+    padding: 10px 25px;
+    width: 100%;
+}
+.employee>img {
+    width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1023)
+{
+    .employee 
+    {
+        width: 50%;
+    }
+}
+@media (min-width: 1024px)
+{
+    .employee
+    {
+        width: 33.33%;
+    }
+}
