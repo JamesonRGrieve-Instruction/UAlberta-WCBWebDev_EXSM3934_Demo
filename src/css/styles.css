@@ -34,3 +34,9 @@ input[type="text"]:focus
     border: 3px solid goldenrod;
 }
 
+/* #5 */
+input:not([type="text"]):hover
+/* Target all input elements that do not have a type attribute of 'text' */
+{
+    background-color: blue;
+}
