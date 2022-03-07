@@ -44,9 +44,33 @@ input:not([type="text"]):hover
 /* #6 */
 @media (max-width: 400px)
 {
-    input 
+    .container
     {
-        width: 100%;
+        width: 90%;
+    }
+    label, input 
+    {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
+/* #7 */
+@media (min-width: 400px) and (max-width: 768px)
+{
+    .container
+    {
+        width: 75%;
+    }
+    label, input 
+    {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+    label 
+    {
+        text-align: center;
+    }
+}
