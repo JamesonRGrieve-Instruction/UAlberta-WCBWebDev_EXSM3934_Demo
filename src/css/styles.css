@@ -1,0 +1,12 @@
+input[type="text"]
+/* Target all input elements with a type attribute of 'text' */
+{
+    color: darkred;
+}
+
+input:not([type="text"])
+/* Target all input elements that do not have a type attribute of 'text' */
+{
+    background-color: darkgreen;
+    color: white;
+}
