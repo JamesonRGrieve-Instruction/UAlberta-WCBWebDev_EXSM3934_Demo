@@ -10,3 +10,10 @@ input:not([type="text"])
     background-color: darkgreen;
     color: white;
 }
+
+/* #2 */
+.container 
+{
+    width: 800px;
+    margin: 0 auto;
+}
