@@ -17,3 +17,13 @@ input:not([type="text"])
     width: 800px;
     margin: 0 auto;
 }
+
+/* #3 */
+body {
+    background-image: url("../img/background.jpg");
+}
+.container
+{
+    background-color: white;
+}
+
