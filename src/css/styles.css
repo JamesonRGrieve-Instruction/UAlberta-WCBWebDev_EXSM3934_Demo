@@ -14,13 +14,39 @@ html {
     /* Top, Right, Bottom, Left (Starting at Noon, 3h Increments Clockwise) */
     padding: 10px;
 }
-.flex {
-    display: flex;
-    flex-wrap: wrap;
+.grid {
+    display: grid;
+    grid-template: 10fr 1fr 10fr 1fr 10fr / 5fr 3fr 2fr 3fr 2fr 3fr 2fr 3fr 5fr;
+    height: 1027px;
+}
+.goose {
+    border: 5px solid firebrick;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+.goose, .bob {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.sally {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.ernest {
+    grid-column-start: 8;
+    grid-column-end: 10;
+}
+.belinda {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.george {
+    grid-column-start: 6;
+    grid-column-end: 9;
 }
 
+
 .employee {
-    padding: 10px 25px;
     width: 100%;
     text-align: center;
 }
@@ -28,24 +54,3 @@ html {
     width: 60%;
 }
 
-@media (min-width: 768px) and (max-width: 1023px)
-{
-
-    .employee 
-    {
-        width: 50%;
-    }
-    .employee>img {
-        width: 100%;
-    }
-}
-@media (min-width: 1024px)
-{
-    .employee
-    {
-        width: 33.33%;
-    }
-    .employee>img {
-        width: 100%;
-    }
-}
