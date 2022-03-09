@@ -6,6 +6,34 @@
     width: 800px;
     margin: 0 auto;
 }
+.flex {
+    display: flex;
+}
+
 h2 {
     text-align: center;
+}
+
+/* Nav Styling */
+header.flex {
+    justify-content: space-between;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 12px 15px;
+}
+nav a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+nav a:visited 
+{
+    color: firebrick;
+}
+nav a:hover {
+    color: purple;
 }
