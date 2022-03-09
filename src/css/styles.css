@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 html {
-    background-image: url("../img/sample-image.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    /* Foreground first */
+    background-image:       url("../img/css.png"),  url("../img/sample-image.jpg");
+    background-size:        150px,                  cover;
+    background-attachment:  fixed,                  fixed;
+    background-repeat:      no-repeat,              no-repeat;
 }
 .container
 {
@@ -41,6 +43,30 @@ html {
 }
 @media (min-width: 1024px)
 {
+    header {
+        /* Stick the header. */
+        position: fixed;
+        /* So we can't see the stuff behind the header. */
+        background-color: white;
+        /* Arbitrary height that fits the content. */
+        height: 150px;
+        /* Same width as container. */
+        width: 800px;
+    }
+    main {
+        /* Bump down the main content to make a gap at the top for the sticky header to sit in. */
+        padding-top: 130px;
+    }
+    /* Push the content in from the sides to account for the lack of container padding. */
+    .container>* 
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* Strip padding on desktop to allow the sticky header to sit flush. */
+    .container {
+        padding: 0;
+    }
     .employee
     {
         width: 33.33%;
