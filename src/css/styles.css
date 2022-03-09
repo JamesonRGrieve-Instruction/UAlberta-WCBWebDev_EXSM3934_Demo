@@ -2,8 +2,32 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
 /* Using a CSS grid, organize your page according to the diagram below: */
-
-
+.grid {
+    height: 500px;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 3fr 1fr;
+}
+/* grid-area: row-start / col-start / row-end / col-end */
+header {
+    grid-area: 1 / 1 / 2 / 3;
+}
+img {
+    grid-area: 2 / 1 / 3 / 2;
+}
+main {
+    grid-area: 2 / 2 / 3 / 3;
+}
+footer {
+    grid-area: 3 / 1 / 4 / 3;
+}
+img {
+    width: 100%;
+}
 
 /* Ensure that your CSS grid is responsive to mobile, tablet and desktop */
