@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    /* Declare a variable. */
+    --container: 400px;
 }
 html {
     /* Foreground first */
@@ -11,7 +13,8 @@ html {
 .container
 {
     background-color: floralwhite;
-    width: 800px;
+    /* Reference a variable. */
+    width: var(--container);
     margin: 0 auto;
     /* Top, Right, Bottom, Left (Starting at Noon, 3h Increments Clockwise) */
     padding: 10px;
@@ -49,13 +52,14 @@ html {
         /* So we can't see the stuff behind the header. */
         background-color: white;
         /* Arbitrary height that fits the content. */
-        height: 150px;
+        height: 105px;
         /* Same width as container. */
-        width: 800px;
+        /* Reference a variable again. */
+        width: var(--container);
     }
     main {
         /* Bump down the main content to make a gap at the top for the sticky header to sit in. */
-        padding-top: 130px;
+        padding-top: 100px;
     }
     /* Push the content in from the sides to account for the lack of container padding. */
     .container>* 
