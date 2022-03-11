@@ -25,6 +25,9 @@ header>:last-child {
 }
 header>:last-child ul.flex {
     width: 100%;
+    height: 100%;
+    margin: 0;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
 }
