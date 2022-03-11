@@ -9,14 +9,7 @@ body {
     background-attachment:  fixed,                      fixed;
 }
 .container {
-    /* 
-    min() Takes the minimum of 2 arguments.
-    max() Takes the maximum of 2 arguments.
-    clamp() Applies a minimum to the last two arguments and a maximum to the first two arguments.
-        (it clamps the middle arguments between the first and last)
-
-    */
-    width: clamp(800px, 80%, 1200px);
+    width: 800px;
     margin: 0 auto;
     background-color: white; 
 }
@@ -78,4 +71,20 @@ aside{
     background-color: white;
     border-radius: 15px;
     padding: 5px;
+}
+
+
+.target {
+    /* 
+    Relative positioning allows you to push an element relative to it's "normal" position.
+    Absolute positioning allows you to place an element relative to the page itself, ignoring all other elements and "normal" position.
+    BOTH of these ignore the normal render heirarchy, and will not affect margins etc.
+
+    top, bottom, left and right properties are used with both. 
+    With relative they push it from that side.
+    With absolute they set the distance from the edge of the page.
+    */
+    position: relative;
+    bottom: 15px;
+    right: 10px;
 }
