@@ -28,8 +28,3 @@ header>:last-child ul.flex {
     justify-content: space-between;
     list-style: none;
 }
-
-header>:last-child ul.flex li:not(:last-child)::after {
-    content: "|";
-    margin-left: 10px;
-}
