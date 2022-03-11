@@ -1,3 +1,35 @@
 * {
     box-sizing: border-box;
 }
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+
+
+/* --- Header --- */
+header {
+    justify-content: space-between;
+    
+}
+
+header>:first-child  {
+    align-items: center;
+}
+
+header>:last-child {
+    width: 40%;
+}
+header>:last-child ul.flex {
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header>:last-child ul.flex li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+}
