@@ -9,7 +9,14 @@ body {
     background-attachment:  fixed,                      fixed;
 }
 .container {
-    width: 800px;
+    /* 
+    min() Takes the minimum of 2 arguments.
+    max() Takes the maximum of 2 arguments.
+    clamp() Applies a minimum to the last two arguments and a maximum to the first two arguments.
+        (it clamps the middle arguments between the first and last)
+
+    */
+    width: clamp(800px, 80%, 1200px);
     margin: 0 auto;
     background-color: white; 
 }
