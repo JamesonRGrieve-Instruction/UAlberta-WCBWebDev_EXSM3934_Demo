@@ -75,6 +75,10 @@ aside{
 
 
 .target {
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+
     /* 
     Relative positioning allows you to push an element relative to it's "normal" position.
     Absolute positioning allows you to place an element relative to the page itself, ignoring all other elements and "normal" position.
@@ -83,8 +87,11 @@ aside{
     top, bottom, left and right properties are used with both. 
     With relative they push it from that side.
     With absolute they set the distance from the edge of the page.
+
+    Absolute positioning MAY wind up relative to a parent in the heirarchy if those parents have certain properties set.
+    Examples are a parent with a relative position, or a flexbox;
     */
-    position: relative;
+    position: absolute;
     bottom: 15px;
     right: 10px;
 }
