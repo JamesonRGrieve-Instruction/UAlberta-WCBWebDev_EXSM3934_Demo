@@ -2,9 +2,16 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-image:       url("../img/bell.png"),     url("../img/background.jpg");
+    background-repeat:      no-repeat,                  no-repeat;
+    background-size:        200px,                      cover;
+    background-attachment:  fixed,                      fixed;
+}
 .container {
     width: 800px;
     margin: 0 auto;
+    background-color: white; 
 }
 .flex {
     display: flex;
@@ -32,8 +39,18 @@ nav a {
 }
 nav a:visited 
 {
-    color: firebrick;
+    color: #0069CB;
 }
 nav a:hover {
     color: purple;
+}
+
+
+/* Sticky Header */
+header {
+    position: fixed;
+    top: 0;
+}
+.container {
+    padding-top: 100px;
 }
