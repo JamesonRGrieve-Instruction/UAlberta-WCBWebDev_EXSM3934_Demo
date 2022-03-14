@@ -70,3 +70,19 @@ main .flex.column div {
     margin-top: 65px;
     text-align: center;
 }
+
+/* --- Aside --- */
+aside {
+    justify-content: space-between;
+    padding: 15px;
+}
+aside h3 {
+    font-size: 1rem;
+}
+aside .flex img {
+    margin-right: 10px;
+}
+aside .flex {
+    justify-content: flex-start;
+    align-items: center;
+}
